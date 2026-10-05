@@ -110,6 +110,7 @@ The system:
                             │
                             ▼
                     Streamlit Interface
+```
 🧩 Feature Engineering
 
 The original FC 27 dataset contains many highly correlated attributes.
