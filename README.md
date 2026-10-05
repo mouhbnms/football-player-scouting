@@ -32,7 +32,7 @@ This project therefore builds a **configurable scouting framework** where player
 
 The Streamlit application provides three main scouting workflows.
 
-### 🎯 Player Recommendations
+###  🎯 Player Recommendations
 
 Find players who match a defined recruitment profile.
 
