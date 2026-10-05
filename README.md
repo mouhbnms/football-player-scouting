@@ -348,7 +348,7 @@ Data/DATASET_README.md
 The dataset is an unofficial snapshot of EA's public ratings data and is used for analysis and educational purposes.
 
 🏗️ Project Structure
-football-player-scouting/
+```textfootball-player-scouting/
 │
 ├── Data/
 │   ├── players.csv
@@ -373,6 +373,8 @@ football-player-scouting/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
+
 🛠️ Tech Stack
 Programming
 Python
