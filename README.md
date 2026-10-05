@@ -157,7 +157,7 @@ Free Kick Accuracy
 
 The original attributes are retained so that recommendations can be explained in detail.
 
-⚽ Position-Specific Scoring
+###⚽ Position-Specific Scoring
 
 Different positions require different player profiles.
 
@@ -214,7 +214,7 @@ Defensive and wide positions use their own position-specific profiles as well.
 
 The weights are transparent, configurable heuristics. They are not learned from EA's overall rating.
 
-🎚️ Recruitment Priorities
+### 🎚️ Recruitment Priorities
 
 Users can modify the importance of individual abilities.
 
@@ -242,7 +242,7 @@ Physicality     → Medium
 
 Changing these priorities changes the resulting player ranking.
 
-🎮 PlayStyle Matching
+### 🎮 PlayStyle Matching
 
 PlayStyles are treated as an additional recruitment signal rather than a hard requirement.
 
@@ -257,7 +257,7 @@ The PlayStyle score contributes a small bonus to the final recommendation.
 
 This means that a player with an excellent attribute profile is not automatically discarded simply because they do not possess a requested PlayStyle.
 
-🔄 Replacement Scoring
+### 🔄 Replacement Scoring
 
 Replacement scouting combines two ideas:
 
@@ -275,7 +275,7 @@ The current weighting gives greater importance to the recruitment profile while 
 
 Important: A high similarity score means that two players have similar attribute profiles. It does not mean that they have the same overall rating, quality, market value, or real-world ability.
 
-##📊 Exploratory Analysis
+## 📊 Exploratory Analysis
 
 The project also contains exploratory analysis of the FC 27 dataset.
 
@@ -293,7 +293,7 @@ The position classification model is used as an exploratory analysis tool to inv
 
 It is not used as the final player recommendation model.
 
-##🧪 Evaluation
+## 🧪 Evaluation
 
 There is no ground-truth dataset indicating which player is objectively the correct recruitment choice.
 
@@ -316,7 +316,7 @@ Requested PlayStyles affect the PlayStyle score
 overall_rating does not directly determine the custom recommendation score
 Similarity rankings are based on normalized scouting attributes
 
-##📁 Dataset
+## 📁 Dataset
 
 The project uses a snapshot of 19,789 EA SPORTS FC 27 players.
 
@@ -349,8 +349,8 @@ Data/DATASET_README.md
 
 The dataset is an unofficial snapshot of EA's public ratings data and is used for analysis and educational purposes.
 
-##🏗️ Project Structure
-```textfootball-player-scouting/
+## 🏗️ Project Structure
+```text football-player-scouting/
 │
 ├── Data/
 │   ├── players.csv
@@ -377,7 +377,7 @@ The dataset is an unofficial snapshot of EA's public ratings data and is used fo
 └── README.md
 ```
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 Programming
 Python
 Data Processing
@@ -392,8 +392,8 @@ Matplotlib
 Seaborn
 Application
 Streamlit
-
-##🚀 Installation & Usage
+ 
+## 🚀 Installation & Usage
 1. Clone the repository
 git clone https://github.com/mouhbnms/football-player-scouting.git
 cd football-player-scouting
@@ -411,7 +411,7 @@ streamlit run app.py
 
 The application will open in your browser.
 
-🖥️ Application Preview
+## 🖥️ Application Preview
 
 Screenshots of the deployed application will be added here.
 
@@ -434,7 +434,7 @@ Find Replacements
 👉 **[Try the application](https://football-player-scouting-m.streamlit.app/)**
 
 
-##⚠️ Limitations
+## ⚠️ Limitations
 Dataset
 
 The system uses FC 27 in-game ratings, not real-world performance data.
@@ -471,7 +471,7 @@ Static Dataset
 
 The project uses a fixed FC 27 snapshot rather than a live player database.
 
-##🔮 Future Improvements
+## 🔮 Future Improvements
 
 Possible future extensions include:
 
@@ -485,7 +485,7 @@ Additional recruitment constraints
 Integration of real-world performance statistics
 More advanced Streamlit visualizations
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Mohamed Benmoussa
 
@@ -493,7 +493,7 @@ Master's graduate in Intelligent Computer Systems.
 
 Focused on Data Science, Machine Learning, and Applied AI.
 
-##📄 Dataset Attribution
+## 📄 Dataset Attribution
 
 The FC 27 player dataset used in this project originates from the ea-fc-player-stats project and is based on data from EA's public ratings API.
 
