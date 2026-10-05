@@ -157,7 +157,7 @@ Free Kick Accuracy
 
 The original attributes are retained so that recommendations can be explained in detail.
 
-###⚽ Position-Specific Scoring
+### ⚽ Position-Specific Scoring
 
 Different positions require different player profiles.
 
