@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-
+import textwrap
 
 # ============================================================
 # PROJECT PATH
@@ -233,38 +233,23 @@ def display_player_card(player, title="Selected player"):
 
 
 def display_score_bar(label, value):
-    value = max(0, min(100, float(value)))
+    value = max(0.0, min(100.0, float(value)))
 
     st.markdown(
         f"""
-        <div style="margin-bottom: 0.6rem;">
-            <div style="
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 0.2rem;
-            ">
-                <span>{label}</span>
-                <strong>{value:.1f}</strong>
-            </div>
-
-            <div style="
-                width: 100%;
-                height: 8px;
-                background: rgba(128,128,128,0.2);
-                border-radius: 10px;
-                overflow: hidden;
-            ">
-                <div style="
-                    width: {value}%;
-                    height: 100%;
-                    border-radius: 10px;
-                    background: #4CAF50;
-                "></div>
-            </div>
-        </div>
-        """,
+<div style="margin-bottom: 0.6rem;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 0.2rem;">
+        <span>{label}</span>
+        <strong>{value:.1f}</strong>
+    </div>
+    <div style="width: 100%; height: 8px; background: rgba(128,128,128,0.2); border-radius: 10px; overflow: hidden;">
+        <div style="width: {value:.1f}%; height: 100%; border-radius: 10px; background: #4CAF50;"></div>
+    </div>
+</div>
+""",
         unsafe_allow_html=True,
     )
+
 def calculate_playstyle_score(player_playstyles, desired_playstyles):
     if not desired_playstyles:
         return 0.0
