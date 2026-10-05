@@ -412,15 +412,22 @@ Screenshots of the deployed application will be added here.
 
 Player Recommendations
 
-Add screenshot here.
+![Player recommendations](images/recommendations.jpeg)
+![Player recommendations](images/recommendations2.jpeg)
 
 Player Similarity
 
-Add screenshot here.
+![Player similarity](images/similarity.jpeg)
 
 Find Replacements
 
-Add screenshot here.
+![Player replacements](images/replacements.jpeg)
+![Player replacements](images/replacements2.jpeg)
+
+## 🚀 Live Demo
+
+👉 **[Try the application](https://football-player-scouting-m.streamlit.app/)**
+
 
 ⚠️ Limitations
 Dataset
